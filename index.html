@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Digital Marketer | MSME Growth</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="p.css">
+</head>
+
+<body>
+
+<header class="reveal">
+  <img src="p.jpeg" alt="Prince Digital Marketer" class="brand-photo">
+  <h1>Prince Digital Marketer</h1>
+  <p>Helping MSME & Small Business Owners Grow with Smart Digital Marketing</p>
+  <a href="tel:7021489776" class="cta-btn">📞 Enquire Now</a>
+</header>
+
+<section class="reveal">
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Simple, affordable and result-oriented digital solutions</p>
+  </div>
+
+  <div class="services">
+    <div class="service-card"> <h3>Business Growth</h3><p>Increase visibility, leads and sales online.</p> </div>
+    <div class="service-card"> <h3>Area-Wise Data</h3><p>Target customers in your exact business location.</p> </div>
+    <div class="service-card"> <h3>Digital Strategy</h3><p>Marketing strategies that actually work.</p> </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="data-section">
+    <h2>Data That Drives Results</h2>
+    <p>We analyze customer behavior and local trends to help your business grow faster.</p>
+  </div>
+</section>
+
+<section class="contact reveal">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="contact-box">
+    <h3>Call for Consultation</h3>
+    <a href="tel:7021489776" style="color:var(--accent);font-size:1.2rem;text-decoration:none;">📞 7021489776</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Prince Digital Marketer. All Rights Reserved.
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll(){
+  for(let i=0;i<reveals.length;i++){
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 100;
+
+    if(elementTop < windowHeight - elementVisible){
+      reveals[i].classList.add('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
